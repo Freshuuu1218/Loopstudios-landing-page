@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./images/mobile/image-hero.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2.5em 1.5em;
+}
+.logo{
+    position: relative;
+    z-index: 1000;
+}
+.logo img{
+    width: 45%;
+    z-index: 1000;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 10;
+    background-color: black;
+    color: white;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5em;
+    list-style: none;
+}
+nav ul li{
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+}
+.hamburger{
+    position: absolute;
+    top: 2.75em;
+    right: 1.5em;
+    z-index: 1000;
+}
+.heading{
+    border: 3px solid white;
+    padding: 1.5em 1.25em 1em;
+    margin-top: 10em;
+}
+.heading h1{    
+    font-size: 2.6em;
+    line-height: 1em;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+main{
+    padding: 0 1.5em 3em;
+}
+.description img{
+    width: 100%;
+}
+.description-text{
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.description-text h2,
+#creations h2{
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: .45em;
+}
+.description-text p{
+    font-family: 'Alata', sans-serif;
+    font-size: .9em;
+    color: hsl(0, 0%, 41%);
+}
+#creations {
+    text-align: center;
+}
+.creation {
+    position: relative;
+    padding: 4em;   
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1.5em;
+}
+.creation h3{
+    width: 40%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 2.5em;
+    left: 1em;
+    text-align: left;
+}
+.creation:nth-child(1){
+    background-image: linear-gradient(to right, black -20%, transparent 60%),url('./images/mobile/image-deep-earth.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.creation:nth-child(2){
+    background-image: linear-gradient(to right, black -20%, transparent 60%),url('./images/mobile/image-night-arcade.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.creation:nth-child(3){
+    background-image: linear-gradient(to right, black -20%, transparent 60%),url('./images/mobile/image-soccer-team.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.creation:nth-child(4){
+    background-image: linear-gradient(to right, black -20%, transparent 60%),url('./images/mobile/image-grid.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.creation:nth-child(4) h3{
+    width: 20%;
+}
+.creation:nth-child(5){
+    background-image: linear-gradient(to right, black -20%, transparent 60%),url('./images/mobile/image-from-above.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.creation:nth-child(6){
+    background-image: linear-gradient(to right, black -20%, transparent 60%),url('./images/mobile/image-pocket-borealis.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.creation:nth-child(7){
+    background-image: linear-gradient(to right, black -20%, transparent 60%),url('./images/mobile/image-curiosity.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.creation:nth-child(8){
+    background-image: linear-gradient(to right, black -20%, transparent 60%),url('./images/mobile/image-fisheye.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#creations button{
+    font-family: 'Alata',sans-serif;
+    text-transform: uppercase;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: .5em 2.5em;
+    font-size: 1em;
+    letter-spacing: .2em;
+}
+footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+}
+footer ul {
+    margin: 2em 0 1em;
+    font-size: 1.1em;
+    text-align: center;
+    list-style: none;
+    font-family: 'Alata',sans-serif;
+}
+footer ul li{
+    margin-bottom: 1em;
+    color: hsl(0, 0%, 75%);
+}
+footer .social{
+    margin-bottom: 1em;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer i{
+    font-size: 1.5em;
+}
+footer p{
+    color: hsl(0, 0%, 55%);
+    font-family: 'Alata', sans-serif;
+}
